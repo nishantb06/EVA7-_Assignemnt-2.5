@@ -11,7 +11,7 @@ I wanted to treat this problem as a **Multi class,Multi label Classification** p
 1. **Both correct** - Number of instances where the model correctly predicted the MNIST digit as well as the sum
 2. **Image Correct** - Number of instances where the model correctly predicted the MNIST digit
 3. **Number Correct** - Number of instances where the model correctly predicted the sum of the two numberes
-4. **Output** - output of the model is a 29 dimensional vector. the first 10 neurons are used to predict the class of the MNIST image and the last 19 neurons are used to predict the sum of MNIST image and the random number. Log_Softmax has also been applied.
+
 
 ## Results
 ********
@@ -29,6 +29,7 @@ I wanted to treat this problem as a **Multi class,Multi label Classification** p
 2. **y1** : Class to which the corresponding x1 belongs to. Also a pytorch tensor 
 3. **x2** : The random number which is OneHotEncoded and thus is 1x10 dimensional tensor. The RandomNumbers class defined in dataloaders.py is used to generate a dataset of random numbers. Over-writing __len__ and __getitem__ functions has been done here.
 4. **y2** : The random number for which the OneHot Encoding was generated
+5. **Output** - output of the model is a 29 dimensional vector. the first 10 neurons are used to predict the class of the MNIST image and the last 19 neurons are used to predict the sum of MNIST image and the random number. Log_Softmax has also been applied.
 
 ## File Structure 
 ********
